@@ -128,9 +128,9 @@ Main
 -----------
 */
 
-/* main .row-section:nth-child(even) {
+main .row-section:nth-child(even) {
     background-color: lightgray;
-} */
+}
 
 .row-section {
     padding: 50px 0px;
