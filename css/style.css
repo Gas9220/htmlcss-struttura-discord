@@ -16,22 +16,36 @@ Debug
 ------------
 */
 
-.debug header {
-    height: 70px;
+.debug .top-header {
     background-color: rgb(155, 211, 225);
 }
 
 .debug .low-header {
-    height: 500px;
+    min-height: 500px;
     background-color: rgb(0, 16, 123);
 }
 
-.debug .low-header {
-    height: 500px;
+.debug .header-image {
+    min-height: 400px;
 }
 
-.debug .header-image {
-    height: 400px;
+.debug .row-section {
+    background-color: rgb(255, 255, 255);
+}
+
+.debug .col-big {
+    background-color: rgb(0, 135, 248);
+    min-height: 450px;
+    
+}
+
+.debug .col-small {
+    background-color: rgb(255, 185, 196);
+    min-height: 450px;
+}
+
+.debug .square {
+    min-height: 800px;
 }
 
 /*
@@ -52,14 +66,14 @@ Header
 
 .top-header {
     display: flex;
-    padding: 10px;
+    padding: 15px 0;
 }
 
 .header-content {
     margin: 0 auto;
     background-color: rgb(221, 154, 50);
     display: flex;
-    width: 50%;
+    width: 60%;
 }
 
 #logo {
@@ -96,4 +110,42 @@ Header
     width: 40%;
     border-radius: 10px;
     background-color: rgb(246, 123, 230);
+}
+
+/*
+-----------
+Main
+-----------
+*/
+
+main .row-section:nth-child(even) {
+    background-color: lightgray;
+}
+
+.row-section {
+    padding: 50px 0px;
+}
+
+.row {
+    margin: 0 auto;
+    display: flex;
+    width: 60%;
+    background-color: red;
+}
+
+.col-big {
+    width: calc(60% + 50px);
+}
+
+.col-small {
+    width: calc(40% + 50px);
+}
+
+.reversed {
+    order: -1
+}
+
+.square {
+    background-color: green;
+    width: 100%;
 }
